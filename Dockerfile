@@ -19,7 +19,7 @@ RUN wget https://www.python.org/ftp/python/3.6.4/Python-3.6.4.tar.xz && tar xvf 
 WORKDIR /opt/
 
 
-RUN git clone https://github.com/cookieY/Yearning.git && \
+RUN git clone https://github.com/healscm/Yearning.git && \
     cd /opt/Yearning/src && pip3 install -r requirements.txt && \
     cp -rf /opt/Yearning/install/connections.py /usr/local/lib/python3.6/site-packages/pymysql/ && \
     cp -rf /opt/Yearning/install/cursors.py /usr/local/lib/python3.6/site-packages/pymysql/ && \
