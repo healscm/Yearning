@@ -13,4 +13,4 @@ fi
 sed -i "s/ipaddress =.*/ipaddress=$HOST/" deploy.conf
 /usr/sbin/nginx
 /opt/Yearning/install/inception/bin/Inception --defaults-file=/opt/Yearning/install/inception/bin/inc.cnf &
-python3 manage.py runserver 0.0.0.0:8000
+python3 manage.py runserver 127.0.0.1:8000
